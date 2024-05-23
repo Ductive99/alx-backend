@@ -6,9 +6,11 @@ from base_caching import BaseCaching
 
 class BasicCache(BaseCaching):
     """Caching System Class
+    - adds an item to the cache
+    - returns an item from a given key
     """
     def put(self, key, item):
-        """adds a item to the cache
+        """adds an item to the cache
         """
         if key is None or item is None:
             return
