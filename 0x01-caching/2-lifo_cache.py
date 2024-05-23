@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Task 2
+"""Task 2 - Last-In First-Out Cache
 """
 from collections import OrderedDict
 
