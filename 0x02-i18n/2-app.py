@@ -14,7 +14,7 @@ class Config:
 
 
 @babel.localeselector
-def get_locale():
+def get_locale() -> str:
     """Determines the best match with the available languages"""
     return request.accept_languages.best_match(app.config["LANGUAGES"])
 
@@ -28,7 +28,7 @@ babel = Babel(app)
 @app.route('/')
 def get_index() -> str:
     """returns the index page"""
-    return render_template('1-index.html')
+    return render_template('2-index.html')
 
 
 if __name__ == "__main__":
